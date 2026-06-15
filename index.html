@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>denigma WASM Vite proof</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; }
+    button, input { font-size: 1rem; }
+    #status { font-weight: 600; }
+    pre { background: #f4f4f4; padding: 1rem; overflow: auto; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>denigma WASM Vite proof</h1>
+    <p id="status">Loading the score reader...</p>
+    <p><button id="sample" disabled>Convert the bundled sample.musx</button></p>
+    <p><label>Or pick a .musx file: <input id="file" type="file" accept=".musx" disabled /></label></p>
+    <pre id="output"></pre>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
